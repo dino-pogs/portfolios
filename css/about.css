@@ -1,0 +1,114 @@
+
+
+/* reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* make sure body doesn't cover the animation */
+body {
+  background: transparent;
+  overflow-x: hidden;
+}
+
+/* =========== Animated background =========== */
+.area {
+  position: fixed;
+  inset: 0;               /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100vh;
+  z-index: -1;            /* behind everything */
+  background: linear-gradient(to left, #a23baf, #6ef069);
+  overflow: hidden;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 600px;
+  background: rgba(37,27,27,0.55);
+  backdrop-filter: blur(6px);
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  animation: fade-down 2.5s ease forwards;
+}
+
+.wrap h3{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: black;
+}
+.wrap p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+}
+
+
+/* =========== NAV =========== */
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 3; /* above content */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(37,27,27,0.55);
+  backdrop-filter: blur(6px);
+}
+
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 6px 10px;
+}
+nav a:hover { 
+  color: #fff; 
+}
+
+
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(0.9);
+  }
+}
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translate(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px) scale(0.9);
+  }
+}
