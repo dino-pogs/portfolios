@@ -1,0 +1,105 @@
+@media (max-width: 320px) {
+nav span {
+    display: none;
+  }
+.image-box1 img {
+    width: 60px;
+    height: 40px;
+    margin: 0;
+  }
+.image-box1 .fb_logo {
+    width: 48px;
+    height: 40px;
+    display: block;
+    margin: 0;
+       
+}
+}
+@media (max-width: 480px) {
+nav span {
+    display: none;
+  }
+.image-box1 img {
+    width: 65px;
+    height: 40px;
+    margin: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+nav span {
+    display: none;
+  }
+.image-box1 img {
+    width: 82px;
+    height: 80px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+nav span {
+    display: none;
+  }
+.image-box1 img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+.section-container h1 {
+    font-size: 50px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+nav span {
+    display: none;
+  }
+nav a {
+    font-size: 25px;
+  } 
+.image-box1 img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+.section-container h1 {
+    font-size: 50px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+nav a {
+    font-size: 25px;
+  } 
+.image-box1 img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+.section-container h1 {
+    font-size: 50px;
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+nav a {
+    font-size: 25px;
+  }
+.image-box1 img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+.section-container h1 {
+    font-size: 50px;
+}
+}
+@media (min-width: 1281px) {
+nav a {
+    font-size: 25px;
+  } 
+.image-box1 img {
+    width: clamp(100px, 8vw, 100px);
+    height: clamp(100px, 8vw, 100px);
+    margin: 0;
+  }
+.section-container h1 {
+    font-size: 50px;
+}
+}
